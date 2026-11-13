@@ -1,0 +1,49 @@
+# Ambiente virtual
+.venv/
+env/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Dados locais gerados (reproduziveis via scripts)
+data/raw/*.csv
+data/raw/*.db
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Segredos e variaveis de ambiente
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Sistema operacional (Linux, Mint, Windows, macOS)
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+*~
+.fuse_hidden*
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs e temporarios
+*.log
+tmp/
+*.egg-info/
+dist/
+build/
