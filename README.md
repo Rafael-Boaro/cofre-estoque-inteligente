@@ -87,6 +87,7 @@ Recursos implementados e validados no código da aplicação:
 - **Painel visual em Streamlit:** Visualização analítica com KPIs de estoque, gráficos comparativos de cobertura, curvas de projeção e filtros interativos.
 - **Assistente de IA integrado:** Agente conversacional que atua sobre o contexto calculado, regido pelas regras de negócio e restrições descritas em [agent.md](agent.md).
 - **Seleção e fallback de provedores de LLM:** Alternância manual e automática entre múltiplos provedores compatíveis (Anthropic, OpenAI, Groq, Google Gemini, OpenRouter e endpoints locais).
+- **Controle de sessão e fatos pré-calculados:** Limite de 15 perguntas por sessão no painel e pré-cálculo em Python de rankings e maiores picos para garantir respostas exatas sem depender de ordenação pelo modelo.
 
 ## Como Rodar
 
