@@ -20,6 +20,8 @@ data/processed/*.log
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
+!.streamlit/secrets.toml.example
 *.pem
 *.key
 
