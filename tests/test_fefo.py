@@ -50,29 +50,23 @@ def eventos_lotes():
 
 
 class TestSaldoPorLote:
-    def test_calcula_saldo(self, eventos_lotes=None):
+    def test_calcula_saldo(self, eventos_lotes):
         """Saldo = entradas - retiradas por lote."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         l001 = saldo[saldo["lote"] == "L001"]["saldo_lote"].iloc[0]
         l002 = saldo[saldo["lote"] == "L002"]["saldo_lote"].iloc[0]
         assert l001 == 25  # 30 - 5
         assert l002 == 17  # 20 - 3
 
-    def test_saldo_nao_negativo(self, eventos_lotes=None):
+    def test_saldo_nao_negativo(self, eventos_lotes):
         """Saldo nunca deve ser negativo."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         assert (saldo["saldo_lote"] >= 0).all()
 
 
 class TestOrdenarFefo:
-    def test_ordem_por_validade(self, eventos_lotes=None):
+    def test_ordem_por_validade(self, eventos_lotes):
         """Lote que vence antes deve aparecer primeiro."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         ordenado = ordenar_fefo(saldo)
         validades = ordenado["validade"].tolist()
@@ -80,29 +74,23 @@ class TestOrdenarFefo:
 
 
 class TestLotesProximosVencimento:
-    def test_detecta_lote_proximo(self, eventos_lotes=None):
+    def test_detecta_lote_proximo(self, eventos_lotes):
         """Lote que vence em 10 dias deve ser detectado com alerta de 30 dias."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         proximos = lotes_proximos_vencimento(saldo, dias_alerta=30)
         assert len(proximos) >= 1
         assert "L001" in proximos["lote"].values
 
-    def test_nao_detecta_lote_distante(self, eventos_lotes=None):
+    def test_nao_detecta_lote_distante(self, eventos_lotes):
         """Lote que vence em 90 dias não deve ser detectado com alerta de 30 dias."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         proximos = lotes_proximos_vencimento(saldo, dias_alerta=30)
         assert "L002" not in proximos["lote"].values
 
 
 class TestSugerirOrdemSaida:
-    def test_ordem_fefo(self, eventos_lotes=None):
+    def test_ordem_fefo(self, eventos_lotes):
         """Deve sugerir primeiro o lote com validade mais próxima."""
-        if eventos_lotes is None:
-            eventos_lotes = globals()["eventos_lotes"]()
         saldo = calcular_saldo_por_lote(eventos_lotes)
         ordem = sugerir_ordem_saida(saldo, "Med A")
         assert len(ordem) == 2

@@ -28,6 +28,8 @@ def main():
         RAIZ / "tests" / "test_reposicao.py",
         RAIZ / "tests" / "test_tratamento.py",
         RAIZ / "tests" / "test_fefo.py",
+        RAIZ / "tests" / "test_assistente.py",
+        RAIZ / "tests" / "test_provedores.py",
     ]
 
     total_passou = 0

@@ -38,43 +38,33 @@ def eventos_simples():
 
 
 class TestEstoqueAtual:
-    def test_calcula_saldo(self, eventos_simples=None):
+    def test_calcula_saldo(self, eventos_simples):
         """Entradas - retiradas = saldo correto."""
-        if eventos_simples is None:
-            eventos_simples = globals()["eventos_simples"]()
         estoque = calcular_estoque_atual(eventos_simples)
         # 50 + 20 - 3 - 5 - 4 = 58
         assert estoque[estoque["medicamento"] == "Med A"]["estoque_atual"].iloc[0] == 58
 
-    def test_colunas(self, eventos_simples=None):
+    def test_colunas(self, eventos_simples):
         """Deve ter colunas medicamento e estoque_atual."""
-        if eventos_simples is None:
-            eventos_simples = globals()["eventos_simples"]()
         estoque = calcular_estoque_atual(eventos_simples)
         assert "medicamento" in estoque.columns
         assert "estoque_atual" in estoque.columns
 
 
 class TestConsumoDiario:
-    def test_dias_preenchidos(self, eventos_simples=None):
+    def test_dias_preenchidos(self, eventos_simples):
         """Dias sem consumo devem ter valor zero."""
-        if eventos_simples is None:
-            eventos_simples = globals()["eventos_simples"]()
         consumo = calcular_consumo_diario(eventos_simples)
         assert len(consumo) >= 2
 
-    def test_soma_dia(self, eventos_simples=None):
+    def test_soma_dia(self, eventos_simples):
         """Consumo do dia 01/01 = 3 + 5 = 8."""
-        if eventos_simples is None:
-            eventos_simples = globals()["eventos_simples"]()
         consumo = calcular_consumo_diario(eventos_simples)
         dia1 = consumo[consumo["data"] == pd.Timestamp("2024-01-01")]
         assert dia1["consumo"].iloc[0] == 8
 
-    def test_sem_entradas_no_consumo(self, eventos_simples=None):
+    def test_sem_entradas_no_consumo(self, eventos_simples):
         """Entradas não devem contar como consumo."""
-        if eventos_simples is None:
-            eventos_simples = globals()["eventos_simples"]()
         consumo = calcular_consumo_diario(eventos_simples)
         total = consumo["consumo"].sum()
         # Retiradas totais: 3 + 5 + 4 = 12
