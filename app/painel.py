@@ -260,6 +260,111 @@ def main():
         hide_index=True,
     )
 
+    # ── Assistente do estoque ──────────────────────────────
+    st.markdown("---")
+    st.subheader("Assistente do estoque")
+    st.caption("Assistente com dados de teste. Ele explica os números do painel e não substitui o farmacêutico.")
+
+    from src.assistente.cliente_llm import verificar_disponibilidade, MENSAGEM_INDISPONIVEL
+    from src.assistente.contexto import montar_contexto
+    from src.assistente.agente import processar_pergunta
+    from src.assistente.provedores import provedores_configurados
+
+    if "mensagens_chat" not in st.session_state:
+        st.session_state.mensagens_chat = []
+    if "contador_perguntas" not in st.session_state:
+        st.session_state.contador_perguntas = 0
+
+    provs_disponiveis = provedores_configurados()
+
+    if not provs_disponiveis:
+        st.info(MENSAGEM_INDISPONIVEL)
+    else:
+        # Seletor de Modelo de IA no topo da seção
+        opcoes_nomes = ["Automático"] + [info["nome"] for info in provs_disponiveis.values()]
+        mapa_nomes = {info["nome"]: pid for pid, info in provs_disponiveis.items()}
+
+        col_sel, _ = st.columns([1, 2])
+        with col_sel:
+            escolha_nome = st.selectbox(
+                "Modelo de IA:",
+                options=opcoes_nomes,
+                index=0,
+                help="Selecione o provedor de IA desejado. 'Automático' utiliza a ordem de tentativa com fallback automático.",
+            )
+
+        provedor_selecionado = None if escolha_nome == "Automático" else mapa_nomes.get(escolha_nome)
+
+        contexto_markdown = montar_contexto(
+            estoque=estoque,
+            sugestoes=sugestoes,
+            saldo_lotes=saldo_lotes,
+            anomalias=anomalias,
+            previsoes=previsoes,
+            consumo=consumo,
+        )
+
+        st.markdown("**Perguntas prontas:**")
+        col_b1, col_b2, col_b3 = st.columns(3)
+        pergunta_pronta = None
+
+        if col_b1.button("O que preciso comprar?", use_container_width=True):
+            pergunta_pronta = "O que preciso comprar?"
+        if col_b2.button("Algum lote perto de vencer?", use_container_width=True):
+            pergunta_pronta = "Algum lote perto de vencer?"
+        if col_b3.button("Resuma a situação do estoque", use_container_width=True):
+            pergunta_pronta = "Resuma a situação do estoque"
+
+        for msg in st.session_state.mensagens_chat:
+            with st.chat_message(msg["role"]):
+                st.write(msg["content"])
+                if msg.get("role") == "assistant" and msg.get("provedor"):
+                    st.caption(f"Provedor: {msg['provedor']}")
+
+        if st.session_state.contador_perguntas >= 15:
+            st.warning("Limite de 15 perguntas por sessão atingido.")
+            pergunta_digitada = None
+        else:
+            pergunta_digitada = st.chat_input("Digite sua dúvida sobre o estoque...")
+
+        pergunta_a_enviar = pergunta_pronta or pergunta_digitada
+
+        if pergunta_a_enviar:
+            if st.session_state.contador_perguntas >= 15:
+                st.warning("Limite de 15 perguntas por sessão atingido.")
+            else:
+                st.session_state.contador_perguntas += 1
+                st.session_state.mensagens_chat.append({"role": "user", "content": pergunta_a_enviar})
+                with st.chat_message("user"):
+                    st.write(pergunta_a_enviar)
+
+                with st.chat_message("assistant"):
+                    with st.spinner("Consultando dados do estoque..."):
+                        resposta = processar_pergunta(
+                            pergunta=pergunta_a_enviar,
+                            historico=st.session_state.mensagens_chat[:-1],
+                            contexto=contexto_markdown,
+                            provedor=provedor_selecionado,
+                        )
+                        texto_resposta = resposta.texto if hasattr(resposta, "texto") else str(resposta)
+                        st.write(texto_resposta)
+
+                        legenda_prov = None
+                        prov_usado = getattr(resposta, "provedor_usado", None)
+                        if prov_usado:
+                            info_p = provs_disponiveis.get(prov_usado)
+                            nome_p = info_p["nome"] if info_p else prov_usado
+                            if getattr(resposta, "fallback_ocorreu", False):
+                                nome_p += " (fallback)"
+                            legenda_prov = nome_p
+                            st.caption(f"Provedor: {legenda_prov}")
+
+                st.session_state.mensagens_chat.append({
+                    "role": "assistant",
+                    "content": texto_resposta,
+                    "provedor": legenda_prov,
+                })
+
     # ── Rodapé ─────────────────────────────────────────────
     st.markdown("---")
     st.caption(
