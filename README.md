@@ -1,169 +1,206 @@
-# Cofre Estoque Inteligente
+# CofreSmart — Cofre Estoque Inteligente
 
-Sistema de controle de estoque inteligente para cofre refrigerado de medicamentos de alto custo com previsao de demanda, reposicao automatizada e regras FEFO. Projeto desenvolvido no ambito do Hackathon Connect 7.0.
+> Cada retirada do cofre vira previsão de demanda e compra na hora certa.
 
-## Apresentacao do Projeto
+> **Aviso de dados de teste:** Todos os dados do protótipo são simulados, no formato que um cofre real enviaria; nada aqui são dados reais de farmácia.
 
-A apresentacao oficial com a proposta conceitual, modelo de negocio e arquitetura da solucao esta disponivel no arquivo PDF do repositorio:
+## O Desafio
 
-- [Apresentacao do Projeto (PDF)](./Cofre%20Estoque%20Inteligente.pdf)
+Hackathon Connect 7.0:
+- **Pergunta oficial:** Como transformar dados de estoque e consumo em inteligência para prever a demanda e orientar a reposição e a compra de medicamentos de alto custo refrigerados?
+- **Contexto:** A empresa já possui um cofre refrigerado com retardo na liberação, criado contra assaltos a farmácias (com foco em canetas emagrecedoras e medicamentos de alto valor), e quer integrá-lo a um controle inteligente de estoque.
+- **Ponto de atenção da banca:** A solução precisa ser viável financeiramente, porque o produto já tem alto valor agregado.
 
-## Visao Geral
+## A Solução
 
-### O Problema
-Farmacias e hospitais que gerenciam medicamentos refrigerados de alto custo (como insulinas especiais, imunobiologicos e canetas GLP-1) enfrentam desafios criticos na cadeia de suprimentos:
-- Rupturas de estoque por falta de previsibilidade de demanda.
-- Perdas financeiras decorrentes do vencimento de lotes armazenados.
-- Compras emergenciais com custos elevados de frete e risco de desabastecimento.
-- Falhas decorrentes de controles manuais e registros descentralizados.
+Sistema integrado que dá baixa automática no estoque a cada retirada do cofre, prevê o consumo de cada medicamento e avisa o fornecedor e o dono da farmácia quando e quanto comprar, com painel simples e assistente de IA.
 
-### A Solucao
-Integracao entre o cofre refrigerado inteligente e o sistema de gestao de estoque:
-- Baixa automatica a cada evento de retirada ou abastecimento do cofre.
-- Previsao de demanda baseada no historico de consumo diario (Media Movel e Suavizacao Exponencial Simples).
-- Sugestoes automaticas de reposicao considerando ponto de pedido e estoque de seguranca com nivel de servico estipulado.
-- Controle rigoroso FEFO (First Expired, First Out) para priorizar lotes com menor prazo de validade.
-- Deteccao de anomalias estatisticas no consumo diario via z-score.
-- Painel analitico para tomada de decisao operacional e gerencial.
+## Demonstração Online
+
+O painel interativo está publicado e acessível no Streamlit Community Cloud:
+- Link da aplicação: https://cofre-estoque-inteligente-7uvxcnxc5dhfyr29ifx9vg.streamlit.app/
+
+## Apresentação
+
+O arquivo da apresentação executiva do projeto está disponível no repositório:
+- Apresentação em PDF: [docs/apresentacao.pdf](docs/apresentacao.pdf)
+
+<details>
+<summary>Ver os slides</summary>
+
+<table>
+<tr>
+<td align="center"><img src="docs/slides/slide-01.png" width="320" alt="Slide 1: Cofre Estoque Inteligente"><br><sub>Slide 1: Cofre Estoque Inteligente</sub></td>
+<td align="center"><img src="docs/slides/slide-02.png" width="320" alt="Slide 2: Medicamento caro, refrigerado e alvo de assalto"><br><sub>Slide 2: Medicamento caro, refrigerado e alvo de assalto</sub></td>
+<td align="center"><img src="docs/slides/slide-03.png" width="320" alt="Slide 3: Do cofre à compra, sem planilha"><br><sub>Slide 3: Do cofre à compra, sem planilha</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/slides/slide-04.png" width="320" alt="Slide 4: Seis camadas, do cofre ao painel"><br><sub>Slide 4: Seis camadas, do cofre ao painel</sub></td>
+<td align="center"><img src="docs/slides/slide-05.png" width="320" alt="Slide 5: Tudo o que você vai ver a seguir usa dados de teste"><br><sub>Slide 5: Tudo o que você vai ver a seguir usa dados de teste</sub></td>
+<td align="center"><img src="docs/slides/slide-06.png" width="320" alt="Slide 6: Visão geral: estoque e cobertura"><br><sub>Slide 6: Visão geral: estoque e cobertura</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/slides/slide-07.png" width="320" alt="Slide 7: Compras sugeridas e lotes (FEFO)"><br><sub>Slide 7: Compras sugeridas e lotes (FEFO)</sub></td>
+<td align="center"><img src="docs/slides/slide-08.png" width="320" alt="Slide 8: Previsão de consumo e anomalias"><br><sub>Slide 8: Previsão de consumo e anomalias</sub></td>
+<td align="center"><img src="docs/slides/slide-09.png" width="320" alt="Slide 9: Quanto comprar e até quando"><br><sub>Slide 9: Quanto comprar e até quando</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/slides/slide-10.png" width="320" alt="Slide 10: Assistente de IA no painel"><br><sub>Slide 10: Assistente de IA no painel</sub></td>
+<td align="center"><img src="docs/slides/slide-11.png" width="320" alt="Slide 11: Valor além da previsão"><br><sub>Slide 11: Valor além da previsão</sub></td>
+<td align="center"><img src="docs/slides/slide-12.png" width="320" alt="Slide 12: Solução leve para um produto de alto valor"><br><sub>Slide 12: Solução leve para um produto de alto valor</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/slides/slide-13.png" width="320" alt="Slide 13: Do protótipo à produção"><br><sub>Slide 13: Do protótipo à produção</sub></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+</details>
+
+## Arquitetura
+
+O fluxo completo da informação opera nas seguintes camadas:
+
+```
+Cofre Refrigerado -> Coleta de Dados -> Tratamento -> Previsão -> Reposição -> Alertas -> Painel
+```
+
+- **Cofre Refrigerado:** Gera registros a cada abertura contendo medicamento, lote, data de validade, quantidade e data/hora.
+- **Coleta de Dados:** Recebe os eventos brutos e realiza a persistência estruturada em arquivos CSV e banco relacional SQLite local.
+- **Tratamento:** Processa e consolida as movimentações em saldo de estoque atual e série temporal agregada de consumo diário.
+- **Previsão:** Aplica modelos estatísticos de média móvel e suavização exponencial, selecionando o modelo com menor erro por medicamento.
+- **Reposição:** Calcula estoque de segurança, ponto de pedido, quantidade sugerida e data limite de solicitação para nível de serviço de 95%.
+- **Alertas:** Gera comunicados direcionados ao fornecedor e ao gestor da farmácia sobre compras necessárias, lotes críticos e anomalias.
+- **Painel:** Disponibiliza interface interativa com indicadores operacionais, gráficos de consumo, previsões e assistente de IA.
+
+Documentação técnica complementar: [docs/arquitetura.md](docs/arquitetura.md).
 
 ## Funcionalidades
 
-- Registro e simulacao de eventos de cofre (entradas e retiradas com lote e validade).
-- Processamento e agregacao de dados de estoque atual e consumo historico.
-- Selecao automatica do melhor modelo de previsao por medicamento via backtesting (menor MAPE).
-- Calculo de ponto de pedido, estoque de seguranca e dias de cobertura.
-- Deteccao preventiva de lotes proximos do vencimento (30 dias).
-- Deteccao de anomalias de consumo para investigacao de perdas ou picos incomuns.
-- Simulacao de disparos de alertas para fornecedores e gestores.
-- Painel visual interativo em Streamlit com graficos analiticos.
+Recursos implementados e validados no código da aplicação:
+- **Previsão por média móvel e suavização exponencial:** Comparação de modelos estatísticos com seleção do menor MAPE via backtesting temporal.
+- **Ponto de pedido e quantidade sugerida:** Cálculo automático de reposição baseado em consumo médio, prazo de entrega do fornecedor e estoque de segurança para 95% de nível de serviço.
+- **Controle FEFO (First Expired, First Out):** Rastreamento de saldo individualizado por lote e avisos preventivos para itens com vencimento em até 30 dias.
+- **Detecção de anomalias:** Identificação estatística de picos ou quedas incomuns de demanda baseada no método de z-score.
+- **Alertas operacionais simulados:** Emissão de comunicados padronizados para fornecedores e gestores sobre compras imediatas e controle de validades.
+- **Painel visual em Streamlit:** Visualização analítica com KPIs de estoque, gráficos comparativos de cobertura, curvas de projeção e filtros interativos.
+- **Assistente de IA integrado:** Agente conversacional que atua sobre o contexto calculado, regido pelas regras de negócio e restrições descritas em [agent.md](agent.md).
+- **Seleção e fallback de provedores de LLM:** Alternância manual e automática entre múltiplos provedores compatíveis (Anthropic, OpenAI, Groq, Google Gemini, OpenRouter e endpoints locais).
 
-## Tecnologias
+## Como Rodar
 
-| Camada | Tecnologia |
-|---|---|
-| Linguagem | Python 3.10+ |
-| Manipulacao e Analise de Dados | Pandas, NumPy |
-| Modelagem e Previsao | statsmodels (SimpleExpSmoothing) |
-| Interface e Dashboard | Streamlit |
-| Visualizacao de Graficos | Plotly |
-| Armazenamento Local | CSV e SQLite |
-| Suite de Testes | pytest |
+### Pré-requisitos
+- Python 3.10 ou superior
+- Git
+
+### Preparação do ambiente
+
+No Linux (Ubuntu / Linux Mint) - Bash:
+```bash
+git clone https://github.com/Rafael-Boaro/cofre-estoque-inteligente.git
+cd cofre-estoque-inteligente
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+No Windows - PowerShell:
+```powershell
+git clone https://github.com/Rafael-Boaro/cofre-estoque-inteligente.git
+cd cofre-estoque-inteligente
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+### Comandos de execução
+
+Com o ambiente virtual ativo, utilize os comandos do projeto:
+
+1. Executar os testes automatizados:
+```bash
+pytest
+```
+
+2. Gerar dados simulados de eventos do cofre:
+```bash
+python scripts/gerar_dados.py
+```
+
+3. Executar o pipeline de tratamento, previsão e reposição:
+```bash
+python scripts/rodar_pipeline.py
+```
+
+4. Iniciar o painel no navegador:
+```bash
+streamlit run app/painel.py
+```
+
+### Assistente de IA
+
+O assistente no painel funciona opcionalmente. Para utilizá-lo com chaves de provedores de IA:
+- No ambiente local: copie [.streamlit/secrets.toml.example](.streamlit/secrets.toml.example) para `.streamlit/secrets.toml` e informe a chave do provedor escolhido (por exemplo, `GROQ_API_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY` ou `ANTHROPIC_API_KEY`). Nunca versione esse arquivo.
+- No Streamlit Community Cloud: adicione as mesmas variáveis em **Settings > Secrets** da sua aplicação publicada.
+- Para validar a conexão e a latência dos provedores configurados:
+```bash
+python scripts/testar_provedores.py
+```
 
 ## Estrutura do Projeto
 
 ```
 cofre-estoque-inteligente/
-|-- Cofre Estoque Inteligente.pdf # Apresentacao do projeto
-|-- README.md                    # Documentacao principal
-|-- requirements.txt             # Dependencias do projeto
-|-- .gitignore                   # Regras de exclusao Git
-|-- .gitattributes               # Normalizacao de quebras de linha e binarios
-|-- data/
-|   |-- raw/                     # Eventos brutos simulados (CSV e SQLite)
-|   |   `-- eventos_cofre.csv    # Dados de exemplo de eventos
-|   `-- processed/               # Dados processados pelo pipeline
-|       |-- estoque_atual.csv    # Saldo consolidado por medicamento
-|       |-- consumo_diario.csv   # Serie temporal de consumo diario
-|       |-- previsoes.csv        # Projecao de demanda para 14 dias
-|       |-- sugestoes_compra.csv # Ponto de pedido e quantidade sugerida
-|       |-- saldo_lotes.csv      # Posicao de estoque por lote e validade
-|       `-- anomalias.csv        # Registros de anomalias detectadas
-|-- src/
-|   |-- config.py                # Parametros globais e caminhos
-|   |-- coleta/
-|   |   |-- simulador_cofre.py   # Gerador de eventos sinteticos
-|   |   `-- armazenamento.py     # Operacoes de persistencia CSV/SQLite
-|   |-- tratamento/
-|   |   `-- pipeline.py          # Consolidacao de eventos em estoque e consumo
-|   |-- previsao/
-|   |   |-- modelos.py           # Algoritmos de previsao de series temporais
-|   |   `-- avaliacao.py         # Selecao de modelos por MAPE
-|   |-- reposicao/
-|   |   `-- regras.py            # Calculo de estoque de seguranca e reposicao
-|   |-- alertas/
-|   |   `-- notificador.py       # Gerador de notificacoes operacionais
-|   `-- diferenciais/
-|       |-- fefo.py              # Logica de ordenacao FEFO e validade
-|       `-- anomalias.py         # Inferencia estatistica de anomalias
-|-- app/
-|   `-- painel.py                # Aplicacao web Streamlit
-|-- scripts/
-|   |-- gerar_dados.py           # Script para geracao de dados simulados
-|   |-- rodar_pipeline.py        # Script de execucao do pipeline completo
-|   `-- testar.py                # Executor auxiliar da suite de testes
-|-- tests/
-|   |-- test_fefo.py             # Testes unitarios de regras FEFO
-|   |-- test_reposicao.py        # Testes unitarios de reposicao
-|   `-- test_tratamento.py       # Testes unitarios do pipeline de tratamento
-`-- docs/
-    `-- arquitetura.md           # Especificacao tecnica de arquitetura
+├── app/                  Painel web interativo em Streamlit
+├── data/                 Arquivos brutos simulados e tabelas processadas pelo pipeline
+├── docs/                 Documentação da arquitetura e apresentação em PDF e slides
+├── scripts/              Scripts de geração de dados, execução do pipeline e testes operacionais
+├── src/                  Módulos de coleta, tratamento, previsão, reposição, alertas e assistente
+├── tests/                Suíte completa de testes automatizados com pytest
+├── .streamlit/           Configuração de temas e exemplo de segredos para execução local e em nuvem
+├── agent.md              Instruções de sistema e regras de negócio do assistente conversacional
+├── requirements.txt      Relação de dependências do ambiente Python
+└── README.md             Documentação central do projeto
 ```
 
-## Instalacao e Execucao
+## Tecnologias
 
-### Clonar o Repositorio
+Bibliotecas e dependências verificadas em [requirements.txt](requirements.txt):
+- **pandas:** Manipulação e estruturação de séries temporais e tabelas relacionais.
+- **numpy:** Operações numéricas e cálculos matemáticos.
+- **plotly:** Renderização de gráficos analíticos e interativos.
+- **streamlit:** Criação da interface de usuário e publicação da aplicação web.
+- **statsmodels:** Modelagem estatística e previsão via suavização exponencial simples.
+- **scikit-learn:** Ferramentas de apoio e métricas estatísticas.
+- **pytest:** Framework de testes unitários e de integração.
+- **anthropic:** SDK nativo para comunicação com modelos Claude.
+- **openai:** SDK para comunicação com a API da OpenAI e endpoints compatíveis.
 
-```bash
-git clone https://github.com/Rafael-Boaro/cofre-estoque-inteligente.git
-cd cofre-estoque-inteligente
-```
+## Viabilidade Financeira
 
-### No Linux (Ubuntu / Linux Mint) - Bash
+- **Modelos simples e explicáveis:** O uso de média móvel e suavização exponencial elimina a necessidade de infraestrutura cara de servidores dedicados a GPUs ou re-treinamento contínuo.
+- **Menos capital parado e menos perda por validade:** A determinação assertiva do ponto de pedido previne estoques inflados, enquanto a priorização FEFO reduz diretamente o descarte de medicamentos refrigerados de alto valor.
+- **Caminho para produção:**
+  - Migração de SQLite para PostgreSQL gerenciado com esquema relacional normalizado.
+  - Substituição da geração simulada por recepção de eventos via API REST (FastAPI) ou protocolo MQTT conectado ao hardware do cofre.
+  - Envio de alertas reais via integrações oficiais de WhatsApp Business API ou serviços corporativos de e-mail.
+- **Uso econômico de IA:** O modelo de linguagem atua apenas na interpretação de dados já consolidados pelo pipeline. O limite de até 15 perguntas por sessão e o truncamento de mensagens contêm o consumo de tokens e evitam custos imprevistos.
 
-```bash
-# 1. Criar e ativar o ambiente virtual
-python3 -m venv .venv
-source .venv/bin/activate
+## Próximos Passos
 
-# 2. Instalar dependencias
-pip install -r requirements.txt
+- Implantação de projeto piloto com coleta de dados reais em um cofre refrigerado em operação de campo.
+- Implementação de notificações em produção via WhatsApp Business API e e-mail.
+- Migração do banco local para PostgreSQL gerenciado.
+- Adaptação da arquitetura para outros segmentos do varejo com produtos de alto valor agregado e controle de lote (autopeças, cosméticos e eletrônicos).
 
-# 3. Gerar dados simulados (opcional se usar os dados de exemplo incluidos)
-python scripts/gerar_dados.py
+## Equipe
 
-# 4. Executar o pipeline de tratamento e previsao
-python scripts/rodar_pipeline.py
+| Integrante | Papel |
+|---|---|
+| Rafael Boaro (líder) | Liderança e organização do time, divisão de tarefas; desenvolvimento e testes do código |
+| Felipe Oliveira | Revisão e aprimoramento do código |
+| Renan Azarias | Apresentação do projeto, explicação e gravação dos vídeos |
+| Felipe Garcia | Apresentação do projeto, explicação e gravação dos vídeos |
 
-# 5. Iniciar o painel analitico
-streamlit run app/painel.py
-```
-
-### No Windows - PowerShell
-
-```powershell
-# 1. Criar e ativar o ambiente virtual
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
-# 2. Instalar dependencias
-pip install -r requirements.txt
-
-# 3. Gerar dados simulados (opcional se usar os dados de exemplo incluidos)
-python scripts/gerar_dados.py
-
-# 4. Executar o pipeline de tratamento e previsao
-python scripts/rodar_pipeline.py
-
-# 5. Iniciar o painel analitico
-streamlit run app/painel.py
-```
-
-## Decisoes Tecnicas
-
-- **Persistencia em CSV e SQLite**: O simulador grava tanto em arquivos CSV (para facilitar inspecao e interoperabilidade) quanto em SQLite, simulando uma estrutura relacional pronta para conexao com bancos corporativos.
-- **Previsao Adaptativa**: Utilizacao de Media Movel e Suavizacao Exponencial Simples (SES via `statsmodels`), avaliadas via backtesting com selecao automatica do menor erro (MAPE) para cada medicamento individualmente.
-- **Algoritmo FEFO**: O consumo e a saida fisica de medicamentos priorizam os lotes com prazo de expiracao mais curto, mitigando o risco de perda por vencimento de itens refrigerados de alto valor.
-- **Deteccao de Anomalias Estatistica**: Metodo de z-score aplicado ao historico de consumo diario para identificar variacoes bruscas decorrentes de desvios, furtos ou surtos de demanda.
-- **Painel Interativo em Streamlit**: Interface rapida para exibicao de metricas operacionais (dias de cobertura, recomendacoes de compra e alertas criticos) sem complexidade de infraestrutura de frontend.
-
-## Testes
-
-Para executar a suite de testes automatizados com o ambiente virtual ativo:
-
-```bash
-python scripts/testar.py
-```
-
-## Licenca
-
-Projeto desenvolvido sob a licenca MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
+O líder organizou e dividiu o time. [Rafael Boaro](https://github.com/Rafael-Boaro) e Felipe Oliveira, com mais experiência em programação, ficaram com o código: Rafael desenvolveu e testou, e Felipe Oliveira revisou e aprimorou. Renan Azarias e Felipe Garcia ficaram com a apresentação do projeto, a explicação e a gravação dos vídeos.
