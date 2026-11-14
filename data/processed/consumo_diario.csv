@@ -1,0 +1,541 @@
+data,medicamento,consumo
+2026-08-16,Caneta GLP-1 A,3
+2026-08-16,Hormônio de Crescimento E,2
+2026-08-16,Imunobiológico C,2
+2026-08-16,Insulina Basal B,2
+2026-08-16,Vacina Especial F,2
+2026-08-16,Anticorpo Monoclonal D,0
+2026-08-17,Caneta GLP-1 A,6
+2026-08-17,Hormônio de Crescimento E,2
+2026-08-17,Imunobiológico C,1
+2026-08-17,Insulina Basal B,9
+2026-08-17,Vacina Especial F,4
+2026-08-17,Anticorpo Monoclonal D,2
+2026-08-18,Caneta GLP-1 A,3
+2026-08-18,Hormônio de Crescimento E,2
+2026-08-18,Imunobiológico C,1
+2026-08-18,Insulina Basal B,7
+2026-08-18,Vacina Especial F,8
+2026-08-18,Anticorpo Monoclonal D,1
+2026-08-19,Caneta GLP-1 A,3
+2026-08-19,Hormônio de Crescimento E,9
+2026-08-19,Imunobiológico C,1
+2026-08-19,Insulina Basal B,7
+2026-08-19,Vacina Especial F,4
+2026-08-19,Anticorpo Monoclonal D,2
+2026-08-20,Caneta GLP-1 A,5
+2026-08-20,Hormônio de Crescimento E,8
+2026-08-20,Imunobiológico C,1
+2026-08-20,Insulina Basal B,5
+2026-08-20,Vacina Especial F,4
+2026-08-20,Anticorpo Monoclonal D,0
+2026-08-21,Caneta GLP-1 A,6
+2026-08-21,Hormônio de Crescimento E,3
+2026-08-21,Imunobiológico C,2
+2026-08-21,Insulina Basal B,5
+2026-08-21,Vacina Especial F,2
+2026-08-21,Anticorpo Monoclonal D,1
+2026-08-22,Caneta GLP-1 A,4
+2026-08-22,Hormônio de Crescimento E,0
+2026-08-22,Imunobiológico C,0
+2026-08-22,Insulina Basal B,3
+2026-08-22,Vacina Especial F,1
+2026-08-22,Anticorpo Monoclonal D,1
+2026-08-23,Caneta GLP-1 A,0
+2026-08-23,Hormônio de Crescimento E,1
+2026-08-23,Imunobiológico C,0
+2026-08-23,Insulina Basal B,1
+2026-08-23,Vacina Especial F,2
+2026-08-23,Anticorpo Monoclonal D,0
+2026-08-24,Caneta GLP-1 A,2
+2026-08-24,Hormônio de Crescimento E,6
+2026-08-24,Imunobiológico C,0
+2026-08-24,Insulina Basal B,4
+2026-08-24,Vacina Especial F,5
+2026-08-24,Anticorpo Monoclonal D,0
+2026-08-25,Caneta GLP-1 A,3
+2026-08-25,Hormônio de Crescimento E,7
+2026-08-25,Imunobiológico C,1
+2026-08-25,Insulina Basal B,11
+2026-08-25,Vacina Especial F,7
+2026-08-25,Anticorpo Monoclonal D,1
+2026-08-26,Caneta GLP-1 A,1
+2026-08-26,Hormônio de Crescimento E,4
+2026-08-26,Imunobiológico C,3
+2026-08-26,Insulina Basal B,8
+2026-08-26,Vacina Especial F,1
+2026-08-26,Anticorpo Monoclonal D,2
+2026-08-27,Caneta GLP-1 A,5
+2026-08-27,Hormônio de Crescimento E,4
+2026-08-27,Imunobiológico C,3
+2026-08-27,Insulina Basal B,6
+2026-08-27,Vacina Especial F,4
+2026-08-27,Anticorpo Monoclonal D,0
+2026-08-28,Caneta GLP-1 A,5
+2026-08-28,Hormônio de Crescimento E,0
+2026-08-28,Imunobiológico C,1
+2026-08-28,Insulina Basal B,4
+2026-08-28,Vacina Especial F,6
+2026-08-28,Anticorpo Monoclonal D,1
+2026-08-29,Caneta GLP-1 A,1
+2026-08-29,Hormônio de Crescimento E,0
+2026-08-29,Imunobiológico C,0
+2026-08-29,Insulina Basal B,3
+2026-08-29,Vacina Especial F,3
+2026-08-29,Anticorpo Monoclonal D,0
+2026-08-30,Caneta GLP-1 A,2
+2026-08-30,Hormônio de Crescimento E,1
+2026-08-30,Imunobiológico C,0
+2026-08-30,Insulina Basal B,1
+2026-08-30,Vacina Especial F,1
+2026-08-30,Anticorpo Monoclonal D,0
+2026-08-31,Caneta GLP-1 A,7
+2026-08-31,Hormônio de Crescimento E,2
+2026-08-31,Imunobiológico C,5
+2026-08-31,Insulina Basal B,11
+2026-08-31,Vacina Especial F,2
+2026-08-31,Anticorpo Monoclonal D,0
+2026-09-01,Caneta GLP-1 A,2
+2026-09-01,Hormônio de Crescimento E,3
+2026-09-01,Imunobiológico C,6
+2026-09-01,Insulina Basal B,6
+2026-09-01,Vacina Especial F,18
+2026-09-01,Anticorpo Monoclonal D,0
+2026-09-02,Caneta GLP-1 A,0
+2026-09-02,Hormônio de Crescimento E,4
+2026-09-02,Imunobiológico C,4
+2026-09-02,Insulina Basal B,13
+2026-09-02,Vacina Especial F,7
+2026-09-02,Anticorpo Monoclonal D,5
+2026-09-03,Caneta GLP-1 A,3
+2026-09-03,Hormônio de Crescimento E,5
+2026-09-03,Imunobiológico C,7
+2026-09-03,Insulina Basal B,1
+2026-09-03,Vacina Especial F,6
+2026-09-03,Anticorpo Monoclonal D,1
+2026-09-04,Caneta GLP-1 A,0
+2026-09-04,Hormônio de Crescimento E,4
+2026-09-04,Imunobiológico C,4
+2026-09-04,Insulina Basal B,8
+2026-09-04,Vacina Especial F,6
+2026-09-04,Anticorpo Monoclonal D,0
+2026-09-05,Caneta GLP-1 A,2
+2026-09-05,Hormônio de Crescimento E,0
+2026-09-05,Imunobiológico C,0
+2026-09-05,Insulina Basal B,0
+2026-09-05,Vacina Especial F,1
+2026-09-05,Anticorpo Monoclonal D,0
+2026-09-06,Caneta GLP-1 A,1
+2026-09-06,Hormônio de Crescimento E,2
+2026-09-06,Imunobiológico C,0
+2026-09-06,Insulina Basal B,2
+2026-09-06,Vacina Especial F,0
+2026-09-06,Anticorpo Monoclonal D,2
+2026-09-07,Caneta GLP-1 A,2
+2026-09-07,Hormônio de Crescimento E,4
+2026-09-07,Imunobiológico C,2
+2026-09-07,Insulina Basal B,1
+2026-09-07,Vacina Especial F,7
+2026-09-07,Anticorpo Monoclonal D,0
+2026-09-08,Caneta GLP-1 A,1
+2026-09-08,Hormônio de Crescimento E,1
+2026-09-08,Imunobiológico C,3
+2026-09-08,Insulina Basal B,10
+2026-09-08,Vacina Especial F,6
+2026-09-08,Anticorpo Monoclonal D,0
+2026-09-09,Caneta GLP-1 A,3
+2026-09-09,Hormônio de Crescimento E,3
+2026-09-09,Imunobiológico C,2
+2026-09-09,Insulina Basal B,11
+2026-09-09,Vacina Especial F,7
+2026-09-09,Anticorpo Monoclonal D,1
+2026-09-10,Caneta GLP-1 A,2
+2026-09-10,Hormônio de Crescimento E,3
+2026-09-10,Imunobiológico C,3
+2026-09-10,Insulina Basal B,13
+2026-09-10,Vacina Especial F,3
+2026-09-10,Anticorpo Monoclonal D,1
+2026-09-11,Caneta GLP-1 A,3
+2026-09-11,Hormônio de Crescimento E,4
+2026-09-11,Imunobiológico C,0
+2026-09-11,Insulina Basal B,9
+2026-09-11,Vacina Especial F,6
+2026-09-11,Anticorpo Monoclonal D,1
+2026-09-12,Caneta GLP-1 A,1
+2026-09-12,Hormônio de Crescimento E,0
+2026-09-12,Imunobiológico C,3
+2026-09-12,Insulina Basal B,5
+2026-09-12,Vacina Especial F,3
+2026-09-12,Anticorpo Monoclonal D,0
+2026-09-13,Caneta GLP-1 A,2
+2026-09-13,Hormônio de Crescimento E,0
+2026-09-13,Imunobiológico C,0
+2026-09-13,Insulina Basal B,3
+2026-09-13,Vacina Especial F,2
+2026-09-13,Anticorpo Monoclonal D,1
+2026-09-14,Caneta GLP-1 A,2
+2026-09-14,Hormônio de Crescimento E,4
+2026-09-14,Imunobiológico C,1
+2026-09-14,Insulina Basal B,9
+2026-09-14,Vacina Especial F,5
+2026-09-14,Anticorpo Monoclonal D,3
+2026-09-15,Caneta GLP-1 A,2
+2026-09-15,Hormônio de Crescimento E,3
+2026-09-15,Imunobiológico C,2
+2026-09-15,Insulina Basal B,6
+2026-09-15,Vacina Especial F,8
+2026-09-15,Anticorpo Monoclonal D,1
+2026-09-16,Caneta GLP-1 A,8
+2026-09-16,Hormônio de Crescimento E,3
+2026-09-16,Imunobiológico C,2
+2026-09-16,Insulina Basal B,6
+2026-09-16,Vacina Especial F,5
+2026-09-16,Anticorpo Monoclonal D,2
+2026-09-17,Caneta GLP-1 A,6
+2026-09-17,Hormônio de Crescimento E,2
+2026-09-17,Imunobiológico C,3
+2026-09-17,Insulina Basal B,4
+2026-09-17,Vacina Especial F,11
+2026-09-17,Anticorpo Monoclonal D,2
+2026-09-18,Caneta GLP-1 A,3
+2026-09-18,Hormônio de Crescimento E,1
+2026-09-18,Imunobiológico C,1
+2026-09-18,Insulina Basal B,6
+2026-09-18,Vacina Especial F,8
+2026-09-18,Anticorpo Monoclonal D,0
+2026-09-19,Caneta GLP-1 A,2
+2026-09-19,Hormônio de Crescimento E,1
+2026-09-19,Imunobiológico C,1
+2026-09-19,Insulina Basal B,1
+2026-09-19,Vacina Especial F,0
+2026-09-19,Anticorpo Monoclonal D,1
+2026-09-20,Caneta GLP-1 A,5
+2026-09-20,Hormônio de Crescimento E,1
+2026-09-20,Imunobiológico C,1
+2026-09-20,Insulina Basal B,0
+2026-09-20,Vacina Especial F,2
+2026-09-20,Anticorpo Monoclonal D,0
+2026-09-21,Caneta GLP-1 A,4
+2026-09-21,Hormônio de Crescimento E,1
+2026-09-21,Imunobiológico C,3
+2026-09-21,Insulina Basal B,7
+2026-09-21,Vacina Especial F,9
+2026-09-21,Anticorpo Monoclonal D,2
+2026-09-22,Caneta GLP-1 A,5
+2026-09-22,Hormônio de Crescimento E,2
+2026-09-22,Imunobiológico C,3
+2026-09-22,Insulina Basal B,9
+2026-09-22,Vacina Especial F,5
+2026-09-22,Anticorpo Monoclonal D,1
+2026-09-23,Caneta GLP-1 A,7
+2026-09-23,Hormônio de Crescimento E,1
+2026-09-23,Imunobiológico C,2
+2026-09-23,Insulina Basal B,7
+2026-09-23,Vacina Especial F,2
+2026-09-23,Anticorpo Monoclonal D,1
+2026-09-24,Caneta GLP-1 A,5
+2026-09-24,Hormônio de Crescimento E,4
+2026-09-24,Imunobiológico C,1
+2026-09-24,Insulina Basal B,6
+2026-09-24,Vacina Especial F,3
+2026-09-24,Anticorpo Monoclonal D,0
+2026-09-25,Caneta GLP-1 A,7
+2026-09-25,Hormônio de Crescimento E,2
+2026-09-25,Imunobiológico C,3
+2026-09-25,Insulina Basal B,9
+2026-09-25,Vacina Especial F,6
+2026-09-25,Anticorpo Monoclonal D,1
+2026-09-26,Caneta GLP-1 A,2
+2026-09-26,Hormônio de Crescimento E,0
+2026-09-26,Imunobiológico C,1
+2026-09-26,Insulina Basal B,4
+2026-09-26,Vacina Especial F,3
+2026-09-26,Anticorpo Monoclonal D,0
+2026-09-27,Caneta GLP-1 A,0
+2026-09-27,Hormônio de Crescimento E,3
+2026-09-27,Imunobiológico C,1
+2026-09-27,Insulina Basal B,3
+2026-09-27,Vacina Especial F,3
+2026-09-27,Anticorpo Monoclonal D,0
+2026-09-28,Caneta GLP-1 A,5
+2026-09-28,Hormônio de Crescimento E,5
+2026-09-28,Imunobiológico C,1
+2026-09-28,Insulina Basal B,7
+2026-09-28,Vacina Especial F,4
+2026-09-28,Anticorpo Monoclonal D,1
+2026-09-29,Caneta GLP-1 A,5
+2026-09-29,Hormônio de Crescimento E,6
+2026-09-29,Imunobiológico C,2
+2026-09-29,Insulina Basal B,7
+2026-09-29,Vacina Especial F,4
+2026-09-29,Anticorpo Monoclonal D,0
+2026-09-30,Caneta GLP-1 A,4
+2026-09-30,Hormônio de Crescimento E,1
+2026-09-30,Imunobiológico C,3
+2026-09-30,Insulina Basal B,7
+2026-09-30,Vacina Especial F,5
+2026-09-30,Anticorpo Monoclonal D,0
+2026-10-01,Caneta GLP-1 A,8
+2026-10-01,Hormônio de Crescimento E,0
+2026-10-01,Imunobiológico C,4
+2026-10-01,Insulina Basal B,3
+2026-10-01,Vacina Especial F,7
+2026-10-01,Anticorpo Monoclonal D,2
+2026-10-02,Caneta GLP-1 A,6
+2026-10-02,Hormônio de Crescimento E,7
+2026-10-02,Imunobiológico C,3
+2026-10-02,Insulina Basal B,6
+2026-10-02,Vacina Especial F,7
+2026-10-02,Anticorpo Monoclonal D,1
+2026-10-03,Caneta GLP-1 A,1
+2026-10-03,Hormônio de Crescimento E,3
+2026-10-03,Imunobiológico C,0
+2026-10-03,Insulina Basal B,2
+2026-10-03,Vacina Especial F,1
+2026-10-03,Anticorpo Monoclonal D,1
+2026-10-04,Caneta GLP-1 A,4
+2026-10-04,Hormônio de Crescimento E,0
+2026-10-04,Imunobiológico C,3
+2026-10-04,Insulina Basal B,3
+2026-10-04,Vacina Especial F,0
+2026-10-04,Anticorpo Monoclonal D,0
+2026-10-05,Caneta GLP-1 A,9
+2026-10-05,Hormônio de Crescimento E,4
+2026-10-05,Imunobiológico C,0
+2026-10-05,Insulina Basal B,5
+2026-10-05,Vacina Especial F,6
+2026-10-05,Anticorpo Monoclonal D,0
+2026-10-06,Caneta GLP-1 A,2
+2026-10-06,Hormônio de Crescimento E,5
+2026-10-06,Imunobiológico C,4
+2026-10-06,Insulina Basal B,11
+2026-10-06,Vacina Especial F,7
+2026-10-06,Anticorpo Monoclonal D,0
+2026-10-07,Caneta GLP-1 A,3
+2026-10-07,Hormônio de Crescimento E,1
+2026-10-07,Imunobiológico C,3
+2026-10-07,Insulina Basal B,14
+2026-10-07,Vacina Especial F,3
+2026-10-07,Anticorpo Monoclonal D,0
+2026-10-08,Caneta GLP-1 A,2
+2026-10-08,Hormônio de Crescimento E,2
+2026-10-08,Imunobiológico C,0
+2026-10-08,Insulina Basal B,3
+2026-10-08,Vacina Especial F,6
+2026-10-08,Anticorpo Monoclonal D,1
+2026-10-09,Caneta GLP-1 A,1
+2026-10-09,Hormônio de Crescimento E,0
+2026-10-09,Imunobiológico C,2
+2026-10-09,Insulina Basal B,7
+2026-10-09,Vacina Especial F,6
+2026-10-09,Anticorpo Monoclonal D,0
+2026-10-10,Caneta GLP-1 A,2
+2026-10-10,Hormônio de Crescimento E,3
+2026-10-10,Imunobiológico C,1
+2026-10-10,Insulina Basal B,1
+2026-10-10,Vacina Especial F,4
+2026-10-10,Anticorpo Monoclonal D,1
+2026-10-11,Caneta GLP-1 A,2
+2026-10-11,Hormônio de Crescimento E,1
+2026-10-11,Imunobiológico C,0
+2026-10-11,Insulina Basal B,4
+2026-10-11,Vacina Especial F,0
+2026-10-11,Anticorpo Monoclonal D,1
+2026-10-12,Caneta GLP-1 A,3
+2026-10-12,Hormônio de Crescimento E,6
+2026-10-12,Imunobiológico C,1
+2026-10-12,Insulina Basal B,5
+2026-10-12,Vacina Especial F,3
+2026-10-12,Anticorpo Monoclonal D,0
+2026-10-13,Caneta GLP-1 A,4
+2026-10-13,Hormônio de Crescimento E,6
+2026-10-13,Imunobiológico C,3
+2026-10-13,Insulina Basal B,5
+2026-10-13,Vacina Especial F,6
+2026-10-13,Anticorpo Monoclonal D,2
+2026-10-14,Caneta GLP-1 A,3
+2026-10-14,Hormônio de Crescimento E,2
+2026-10-14,Imunobiológico C,3
+2026-10-14,Insulina Basal B,8
+2026-10-14,Vacina Especial F,1
+2026-10-14,Anticorpo Monoclonal D,0
+2026-10-15,Caneta GLP-1 A,9
+2026-10-15,Hormônio de Crescimento E,4
+2026-10-15,Imunobiológico C,6
+2026-10-15,Insulina Basal B,5
+2026-10-15,Vacina Especial F,4
+2026-10-15,Anticorpo Monoclonal D,0
+2026-10-16,Caneta GLP-1 A,7
+2026-10-16,Hormônio de Crescimento E,3
+2026-10-16,Imunobiológico C,0
+2026-10-16,Insulina Basal B,6
+2026-10-16,Vacina Especial F,3
+2026-10-16,Anticorpo Monoclonal D,0
+2026-10-17,Caneta GLP-1 A,3
+2026-10-17,Hormônio de Crescimento E,1
+2026-10-17,Imunobiológico C,1
+2026-10-17,Insulina Basal B,3
+2026-10-17,Vacina Especial F,2
+2026-10-17,Anticorpo Monoclonal D,0
+2026-10-18,Caneta GLP-1 A,1
+2026-10-18,Hormônio de Crescimento E,1
+2026-10-18,Imunobiológico C,0
+2026-10-18,Insulina Basal B,2
+2026-10-18,Vacina Especial F,2
+2026-10-18,Anticorpo Monoclonal D,0
+2026-10-19,Caneta GLP-1 A,4
+2026-10-19,Hormônio de Crescimento E,3
+2026-10-19,Imunobiológico C,1
+2026-10-19,Insulina Basal B,9
+2026-10-19,Vacina Especial F,3
+2026-10-19,Anticorpo Monoclonal D,0
+2026-10-20,Caneta GLP-1 A,8
+2026-10-20,Hormônio de Crescimento E,2
+2026-10-20,Imunobiológico C,3
+2026-10-20,Insulina Basal B,5
+2026-10-20,Vacina Especial F,6
+2026-10-20,Anticorpo Monoclonal D,0
+2026-10-21,Caneta GLP-1 A,1
+2026-10-21,Hormônio de Crescimento E,1
+2026-10-21,Imunobiológico C,2
+2026-10-21,Insulina Basal B,5
+2026-10-21,Vacina Especial F,6
+2026-10-21,Anticorpo Monoclonal D,1
+2026-10-22,Caneta GLP-1 A,2
+2026-10-22,Hormônio de Crescimento E,2
+2026-10-22,Imunobiológico C,1
+2026-10-22,Insulina Basal B,5
+2026-10-22,Vacina Especial F,8
+2026-10-22,Anticorpo Monoclonal D,2
+2026-10-23,Caneta GLP-1 A,4
+2026-10-23,Hormônio de Crescimento E,6
+2026-10-23,Imunobiológico C,2
+2026-10-23,Insulina Basal B,3
+2026-10-23,Vacina Especial F,3
+2026-10-23,Anticorpo Monoclonal D,3
+2026-10-24,Caneta GLP-1 A,4
+2026-10-24,Hormônio de Crescimento E,2
+2026-10-24,Imunobiológico C,2
+2026-10-24,Insulina Basal B,4
+2026-10-24,Vacina Especial F,1
+2026-10-24,Anticorpo Monoclonal D,0
+2026-10-25,Caneta GLP-1 A,1
+2026-10-25,Hormônio de Crescimento E,4
+2026-10-25,Imunobiológico C,1
+2026-10-25,Insulina Basal B,1
+2026-10-25,Vacina Especial F,3
+2026-10-25,Anticorpo Monoclonal D,0
+2026-10-26,Caneta GLP-1 A,3
+2026-10-26,Hormônio de Crescimento E,3
+2026-10-26,Imunobiológico C,3
+2026-10-26,Insulina Basal B,7
+2026-10-26,Vacina Especial F,5
+2026-10-26,Anticorpo Monoclonal D,1
+2026-10-27,Caneta GLP-1 A,2
+2026-10-27,Hormônio de Crescimento E,2
+2026-10-27,Imunobiológico C,2
+2026-10-27,Insulina Basal B,6
+2026-10-27,Vacina Especial F,1
+2026-10-27,Anticorpo Monoclonal D,2
+2026-10-28,Caneta GLP-1 A,5
+2026-10-28,Hormônio de Crescimento E,8
+2026-10-28,Imunobiológico C,2
+2026-10-28,Insulina Basal B,9
+2026-10-28,Vacina Especial F,2
+2026-10-28,Anticorpo Monoclonal D,2
+2026-10-29,Caneta GLP-1 A,4
+2026-10-29,Hormônio de Crescimento E,3
+2026-10-29,Imunobiológico C,0
+2026-10-29,Insulina Basal B,15
+2026-10-29,Vacina Especial F,7
+2026-10-29,Anticorpo Monoclonal D,1
+2026-10-30,Caneta GLP-1 A,4
+2026-10-30,Hormônio de Crescimento E,3
+2026-10-30,Imunobiológico C,3
+2026-10-30,Insulina Basal B,10
+2026-10-30,Vacina Especial F,2
+2026-10-30,Anticorpo Monoclonal D,1
+2026-10-31,Caneta GLP-1 A,2
+2026-10-31,Hormônio de Crescimento E,2
+2026-10-31,Imunobiológico C,2
+2026-10-31,Insulina Basal B,2
+2026-10-31,Vacina Especial F,3
+2026-10-31,Anticorpo Monoclonal D,0
+2026-11-01,Caneta GLP-1 A,0
+2026-11-01,Hormônio de Crescimento E,0
+2026-11-01,Imunobiológico C,3
+2026-11-01,Insulina Basal B,2
+2026-11-01,Vacina Especial F,4
+2026-11-01,Anticorpo Monoclonal D,0
+2026-11-02,Caneta GLP-1 A,2
+2026-11-02,Hormônio de Crescimento E,8
+2026-11-02,Imunobiológico C,2
+2026-11-02,Insulina Basal B,3
+2026-11-02,Vacina Especial F,4
+2026-11-02,Anticorpo Monoclonal D,1
+2026-11-03,Caneta GLP-1 A,6
+2026-11-03,Hormônio de Crescimento E,0
+2026-11-03,Imunobiológico C,1
+2026-11-03,Insulina Basal B,7
+2026-11-03,Vacina Especial F,4
+2026-11-03,Anticorpo Monoclonal D,2
+2026-11-04,Caneta GLP-1 A,5
+2026-11-04,Hormônio de Crescimento E,1
+2026-11-04,Imunobiológico C,3
+2026-11-04,Insulina Basal B,7
+2026-11-04,Vacina Especial F,1
+2026-11-04,Anticorpo Monoclonal D,0
+2026-11-05,Caneta GLP-1 A,4
+2026-11-05,Hormônio de Crescimento E,4
+2026-11-05,Imunobiológico C,2
+2026-11-05,Insulina Basal B,6
+2026-11-05,Vacina Especial F,3
+2026-11-05,Anticorpo Monoclonal D,2
+2026-11-06,Caneta GLP-1 A,0
+2026-11-06,Hormônio de Crescimento E,4
+2026-11-06,Imunobiológico C,4
+2026-11-06,Insulina Basal B,6
+2026-11-06,Vacina Especial F,4
+2026-11-06,Anticorpo Monoclonal D,3
+2026-11-07,Caneta GLP-1 A,2
+2026-11-07,Hormônio de Crescimento E,4
+2026-11-07,Imunobiológico C,1
+2026-11-07,Insulina Basal B,2
+2026-11-07,Vacina Especial F,1
+2026-11-07,Anticorpo Monoclonal D,0
+2026-11-08,Caneta GLP-1 A,3
+2026-11-08,Hormônio de Crescimento E,1
+2026-11-08,Imunobiológico C,0
+2026-11-08,Insulina Basal B,3
+2026-11-08,Vacina Especial F,4
+2026-11-08,Anticorpo Monoclonal D,0
+2026-11-09,Caneta GLP-1 A,2
+2026-11-09,Hormônio de Crescimento E,2
+2026-11-09,Imunobiológico C,0
+2026-11-09,Insulina Basal B,6
+2026-11-09,Vacina Especial F,9
+2026-11-09,Anticorpo Monoclonal D,0
+2026-11-10,Caneta GLP-1 A,5
+2026-11-10,Hormônio de Crescimento E,2
+2026-11-10,Imunobiológico C,0
+2026-11-10,Insulina Basal B,7
+2026-11-10,Vacina Especial F,10
+2026-11-10,Anticorpo Monoclonal D,4
+2026-11-11,Caneta GLP-1 A,2
+2026-11-11,Hormônio de Crescimento E,3
+2026-11-11,Imunobiológico C,2
+2026-11-11,Insulina Basal B,9
+2026-11-11,Vacina Especial F,5
+2026-11-11,Anticorpo Monoclonal D,0
+2026-11-12,Caneta GLP-1 A,4
+2026-11-12,Hormônio de Crescimento E,2
+2026-11-12,Imunobiológico C,0
+2026-11-12,Insulina Basal B,3
+2026-11-12,Vacina Especial F,4
+2026-11-12,Anticorpo Monoclonal D,0
+2026-11-13,Caneta GLP-1 A,6
+2026-11-13,Hormônio de Crescimento E,2
+2026-11-13,Imunobiológico C,1
+2026-11-13,Insulina Basal B,0
+2026-11-13,Vacina Especial F,12
+2026-11-13,Anticorpo Monoclonal D,0

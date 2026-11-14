@@ -1,0 +1,85 @@
+medicamento,dia,previsao,modelo
+Caneta GLP-1 A,1,3.43,media_movel
+Caneta GLP-1 A,2,3.43,media_movel
+Caneta GLP-1 A,3,3.43,media_movel
+Caneta GLP-1 A,4,3.43,media_movel
+Caneta GLP-1 A,5,3.43,media_movel
+Caneta GLP-1 A,6,3.43,media_movel
+Caneta GLP-1 A,7,3.43,media_movel
+Caneta GLP-1 A,8,3.43,media_movel
+Caneta GLP-1 A,9,3.43,media_movel
+Caneta GLP-1 A,10,3.43,media_movel
+Caneta GLP-1 A,11,3.43,media_movel
+Caneta GLP-1 A,12,3.43,media_movel
+Caneta GLP-1 A,13,3.43,media_movel
+Caneta GLP-1 A,14,3.43,media_movel
+Hormônio de Crescimento E,1,2.29,media_movel
+Hormônio de Crescimento E,2,2.29,media_movel
+Hormônio de Crescimento E,3,2.29,media_movel
+Hormônio de Crescimento E,4,2.29,media_movel
+Hormônio de Crescimento E,5,2.29,media_movel
+Hormônio de Crescimento E,6,2.29,media_movel
+Hormônio de Crescimento E,7,2.29,media_movel
+Hormônio de Crescimento E,8,2.29,media_movel
+Hormônio de Crescimento E,9,2.29,media_movel
+Hormônio de Crescimento E,10,2.29,media_movel
+Hormônio de Crescimento E,11,2.29,media_movel
+Hormônio de Crescimento E,12,2.29,media_movel
+Hormônio de Crescimento E,13,2.29,media_movel
+Hormônio de Crescimento E,14,2.29,media_movel
+Imunobiológico C,1,0.57,media_movel
+Imunobiológico C,2,0.57,media_movel
+Imunobiológico C,3,0.57,media_movel
+Imunobiológico C,4,0.57,media_movel
+Imunobiológico C,5,0.57,media_movel
+Imunobiológico C,6,0.57,media_movel
+Imunobiológico C,7,0.57,media_movel
+Imunobiológico C,8,0.57,media_movel
+Imunobiológico C,9,0.57,media_movel
+Imunobiológico C,10,0.57,media_movel
+Imunobiológico C,11,0.57,media_movel
+Imunobiológico C,12,0.57,media_movel
+Imunobiológico C,13,0.57,media_movel
+Imunobiológico C,14,0.57,media_movel
+Insulina Basal B,1,3.82,suavizacao_exponencial
+Insulina Basal B,2,3.82,suavizacao_exponencial
+Insulina Basal B,3,3.82,suavizacao_exponencial
+Insulina Basal B,4,3.82,suavizacao_exponencial
+Insulina Basal B,5,3.82,suavizacao_exponencial
+Insulina Basal B,6,3.82,suavizacao_exponencial
+Insulina Basal B,7,3.82,suavizacao_exponencial
+Insulina Basal B,8,3.82,suavizacao_exponencial
+Insulina Basal B,9,3.82,suavizacao_exponencial
+Insulina Basal B,10,3.82,suavizacao_exponencial
+Insulina Basal B,11,3.82,suavizacao_exponencial
+Insulina Basal B,12,3.82,suavizacao_exponencial
+Insulina Basal B,13,3.82,suavizacao_exponencial
+Insulina Basal B,14,3.82,suavizacao_exponencial
+Vacina Especial F,1,7.36,suavizacao_exponencial
+Vacina Especial F,2,7.36,suavizacao_exponencial
+Vacina Especial F,3,7.36,suavizacao_exponencial
+Vacina Especial F,4,7.36,suavizacao_exponencial
+Vacina Especial F,5,7.36,suavizacao_exponencial
+Vacina Especial F,6,7.36,suavizacao_exponencial
+Vacina Especial F,7,7.36,suavizacao_exponencial
+Vacina Especial F,8,7.36,suavizacao_exponencial
+Vacina Especial F,9,7.36,suavizacao_exponencial
+Vacina Especial F,10,7.36,suavizacao_exponencial
+Vacina Especial F,11,7.36,suavizacao_exponencial
+Vacina Especial F,12,7.36,suavizacao_exponencial
+Vacina Especial F,13,7.36,suavizacao_exponencial
+Vacina Especial F,14,7.36,suavizacao_exponencial
+Anticorpo Monoclonal D,1,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,2,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,3,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,4,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,5,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,6,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,7,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,8,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,9,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,10,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,11,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,12,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,13,0.55,suavizacao_exponencial
+Anticorpo Monoclonal D,14,0.55,suavizacao_exponencial

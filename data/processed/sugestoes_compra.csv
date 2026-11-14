@@ -1,0 +1,3 @@
+medicamento,estoque_atual,consumo_medio_dia,desvio_consumo,estoque_seguranca,ponto_pedido,dias_cobertura,qtd_sugerida,data_limite_pedido,precisa_comprar
+Med A,10,3.0,0.0,0.0,15.0,3.3,42,2026-11-14,True
+Med B,100,2.0,0.0,0.0,10.0,50.0,28,2026-12-29,False

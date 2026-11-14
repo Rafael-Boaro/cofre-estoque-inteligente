@@ -1,0 +1,13 @@
+data,medicamento,consumo,z_score,tipo_anomalia
+2026-10-05,Caneta GLP-1 A,9,2.5726111271974847,pico
+2026-10-15,Caneta GLP-1 A,9,2.5726111271974847,pico
+2026-08-19,Hormônio de Crescimento E,9,2.9539826095439157,pico
+2026-09-01,Imunobiológico C,6,2.7547543843308047,pico
+2026-09-03,Imunobiológico C,7,3.4123880569827207,pico
+2026-10-15,Imunobiológico C,6,2.7547543843308047,pico
+2026-10-07,Insulina Basal B,14,2.5227580024500917,pico
+2026-10-29,Insulina Basal B,15,2.8222939130312374,pico
+2026-09-01,Vacina Especial F,18,4.586327991207668,pico
+2026-11-13,Vacina Especial F,12,2.5662487781145678,pico
+2026-09-02,Anticorpo Monoclonal D,5,4.12200304353467,pico
+2026-11-10,Anticorpo Monoclonal D,4,3.1405737474549875,pico
