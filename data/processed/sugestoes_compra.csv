@@ -1,3 +1,7 @@
 medicamento,estoque_atual,consumo_medio_dia,desvio_consumo,estoque_seguranca,ponto_pedido,dias_cobertura,qtd_sugerida,data_limite_pedido,precisa_comprar
-Med A,10,3.0,0.0,0.0,15.0,3.3,42,2026-11-14,True
-Med B,100,2.0,0.0,0.0,10.0,50.0,28,2026-12-29,False
+Anticorpo Monoclonal D,25,0.8,1.02,4.4,10.0,31.2,12,2026-12-08,False
+Caneta GLP-1 A,49,3.39,2.18,8.0,25.0,14.5,48,2026-11-23,False
+Hormônio de Crescimento E,65,2.74,2.12,7.0,18.0,23.7,39,2026-12-03,False
+Imunobiológico C,25,1.81,1.52,6.6,19.3,13.8,26,2026-11-20,False
+Insulina Basal B,0,5.58,3.34,9.5,26.3,0.0,79,2026-11-14,True
+Vacina Especial F,32,4.38,2.97,11.0,32.8,7.3,62,2026-11-16,True
