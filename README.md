@@ -18,7 +18,7 @@ Sistema integrado que dá baixa automática no estoque a cada retirada do cofre,
 ## Demonstração Online
 
 O painel interativo está publicado e acessível no Streamlit Community Cloud:
-- Link da aplicação: https://cofre-estoque-inteligente-7uvxcnxc5dhfyr29ifx9vg.streamlit.app/
+- Link da aplicação: [cofre-estoque-inteligente-7uvxcnxc5dhfyr29ifx9vg.streamlit.app](https://cofre-estoque-inteligente-7uvxcnxc5dhfyr29ifx9vg.streamlit.app/)
 
 ## Apresentação
 
@@ -187,13 +187,6 @@ Bibliotecas e dependências verificadas em [requirements.txt](requirements.txt):
   - Substituição da geração simulada por recepção de eventos via API REST (FastAPI) ou protocolo MQTT conectado ao hardware do cofre.
   - Envio de alertas reais via integrações oficiais de WhatsApp Business API ou serviços corporativos de e-mail.
 - **Uso econômico de IA:** O modelo de linguagem atua apenas na interpretação de dados já consolidados pelo pipeline. O limite de até 15 perguntas por sessão e o truncamento de mensagens contêm o consumo de tokens e evitam custos imprevistos.
-
-## Próximos Passos
-
-- Implantação de projeto piloto com coleta de dados reais em um cofre refrigerado em operação de campo.
-- Implementação de notificações em produção via WhatsApp Business API e e-mail.
-- Migração do banco local para PostgreSQL gerenciado.
-- Adaptação da arquitetura para outros segmentos do varejo com produtos de alto valor agregado e controle de lote (autopeças, cosméticos e eletrônicos).
 
 ## Equipe
 
