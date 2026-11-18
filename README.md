@@ -7,6 +7,10 @@
 > **3º Lugar na Trilha Einsan Tech — Hackathon Connect 7.0**
 > 14º lugar geral entre 76 participantes | Nota media: 8,5/10
 
+Certificado oficial: [docs/certificado-hackathon-connect-7.0.pdf](docs/certificado-hackathon-connect-7.0.pdf)
+
+![Podio da Trilha Einsan Tech — 3 lugar](docs/podio-trilha-einsan-tech.png)
+
 ---
 
 > **Aviso de dados de teste:** Todos os dados do prototipo sao simulados, no formato que um cofre real enviaria; nada aqui sao dados reais de farmacia.
