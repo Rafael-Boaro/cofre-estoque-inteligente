@@ -2,18 +2,34 @@
 
 > Cada retirada do cofre vira previsão de demanda e compra na hora certa.
 
-> **Aviso de dados de teste:** Todos os dados do protótipo são simulados, no formato que um cofre real enviaria; nada aqui são dados reais de farmácia.
+---
+
+> **3º Lugar na Trilha Einsan Tech — Hackathon Connect 7.0**
+> 14º lugar geral entre 76 participantes | Nota media: 8,5/10
+
+---
+
+> **Aviso de dados de teste:** Todos os dados do prototipo sao simulados, no formato que um cofre real enviaria; nada aqui sao dados reais de farmacia.
 
 ## O Desafio
 
-Hackathon Connect 7.0:
-- **Pergunta oficial:** Como transformar dados de estoque e consumo em inteligência para prever a demanda e orientar a reposição e a compra de medicamentos de alto custo refrigerados?
-- **Contexto:** A empresa já possui um cofre refrigerado com retardo na liberação, criado contra assaltos a farmácias (com foco em canetas emagrecedoras e medicamentos de alto valor), e quer integrá-lo a um controle inteligente de estoque.
-- **Ponto de atenção da banca:** A solução precisa ser viável financeiramente, porque o produto já tem alto valor agregado.
+**Hackathon Connect 7.0 — Trilha Einsan Tech**
 
-## A Solução
+A Einsan Tech propoe hardware de seguranca para farmacias: cofres refrigerados com retardo de abertura, desenvolvidos para reduzir o impacto de assaltos a produtos de alto valor como canetas emagrecedoras e medicamentos refrigerados de uso controlado.
 
-Sistema integrado que dá baixa automática no estoque a cada retirada do cofre, prevê o consumo de cada medicamento e avisa o fornecedor e o dono da farmácia quando e quanto comprar, com painel simples e assistente de IA.
+O desafio apresentado pela banca foi:
+
+- **Pergunta oficial:** Como transformar dados de estoque e consumo em inteligencia para prever a demanda e orientar a reposicao e a compra de medicamentos de alto custo refrigerados?
+- **Contexto:** O cofre ja existe e ja registra cada abertura. O problema e que esses dados de movimentacao ficam sem uso; nao ha previsao de demanda, nao ha controle de validade por lote e nao ha aviso de quando e quanto comprar.
+- **Restricao central da banca:** A solucao precisa ser economicamente viavel para nao encarecer um produto que ja tem alto valor agregado.
+
+Minha atuacao foi de **Lider Tecnico e Engenheiro de Software**: defini a arquitetura em 6 camadas, escrevi e testei todo o codigo de producao, integrei os modelos estatisticos de previsao e o assistente de IA, e coordenei a divisao de trabalho da equipe.
+
+## A Solucao
+
+Sistema integrado que da baixa automatica no estoque a cada retirada do cofre, preve o consumo de cada medicamento com modelos estatisticos de media movel e suavizacao exponencial, calcula ponto de pedido e quantidade sugerida com nivel de servico de 95%, controla lotes por FEFO (First Expired, First Out), detecta anomalias de demanda via z-score e comunica o fornecedor e o gestor da farmacia quando e quanto comprar — tudo em um painel web com assistente de IA deterministico sobre os dados ja processados pelo pipeline.
+
+A escolha por modelos simples e explicaveis foi uma resposta direta ao ponto de atencao da banca: a solucao funciona sem GPU, sem re-treinamento continuo e sem infraestrutura cara, tornando a integracao ao cofre existente financeiramente viavel.
 
 ## Demonstração Online
 
@@ -192,9 +208,9 @@ Bibliotecas e dependências verificadas em [requirements.txt](requirements.txt):
 
 | Integrante | Papel |
 |---|---|
-| Rafael Boaro (líder) | Liderança e organização do time, divisão de tarefas; desenvolvimento e testes do código |
-| Felipe Oliveira | Revisão e aprimoramento do código |
-| Renan Azarias | Apresentação do projeto, explicação e gravação dos vídeos |
-| Felipe Garcia | Apresentação do projeto, explicação e gravação dos vídeos |
+| Rafael Boaro — Lider Tecnico e Engenheiro de Software | Arquitetura da solucao em 6 camadas; desenvolvimento, integracao e testes de todo o codigo de producao; coordenacao e divisao de tarefas do time |
+| Felipe Oliveira | Revisao e aprimoramento do codigo |
+| Renan Azarias | Apresentacao do projeto, explicacao e gravacao dos videos |
+| Felipe Garcia | Apresentacao do projeto, explicacao e gravacao dos videos |
 
-O líder organizou e dividiu o time. [Rafael Boaro](https://github.com/Rafael-Boaro) e Felipe Oliveira, com mais experiência em programação, ficaram com o código: Rafael desenvolveu e testou, e Felipe Oliveira revisou e aprimorou. Renan Azarias e Felipe Garcia ficaram com a apresentação do projeto, a explicação e a gravação dos vídeos.
+[Rafael Boaro](https://github.com/Rafael-Boaro) atuou como Lider Tecnico e Engenheiro de Software: definiu a arquitetura em 6 camadas, implementou e testou todos os modulos de coleta, tratamento, previsao, reposicao, alertas e o assistente de IA deterministico, e coordenou a divisao de trabalho da equipe. Felipe Oliveira revisou e aprimorou o codigo. Renan Azarias e Felipe Garcia conduziram a apresentacao, a explicacao e a gravacao dos videos.
